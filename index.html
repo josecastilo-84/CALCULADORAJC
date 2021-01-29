@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+        <title>CALCULADORA</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="CSS/estilos.css">
+       
+</head>
+<body>
+    <!--contenedor CALCULADORA-->
+    <div class="container">
+        <!--DIV CALCULADORA-->
+        <div class="column">
+                <h1 style="text-align: center;">CALCULADORA</h1>
+
+                <div class="calculator-info">
+                    <input id="data"type="text" disabled>
+                </div>
+         <!--DIV NUMEROS Y PROPIEDADES-->
+         <div class="calculator data row">
+                <!--DIV NUMEROS-->
+                <div class="row" style="width:90; flex-wrap:wrap;">
+
+                    <input type="button" class="btn-number" onclick="printnumber(this);" value="1">
+                    <input type="button" class="btn-number" onclick="printnumber(this);" value="2">
+                    <input type="button" class="btn-number" onclick="printnumber(this)" value="3">
+                    <input type="button" class="btn-number" onclick="printnumber(this)" value="4">
+                    <input type="button" class="btn-number" onclick="printnumber(this)" value="5">
+                    <input type="button" class="btn-number" onclick="printnumber(this)" value="6">
+                    <input type="button" class="btn-number" onclick="printnumber(this)" value="7">
+                    <input type="button" class="btn-number" onclick="printnumber(this)" value="8">
+                    <input type="button" class="btn-number" onclick="printnumber(this)" value="9">
+                    <input type="button" class="btn-number" onclick="Clearinput"(); value="Limpiar"> 
+                    <input type="button" class="btn-number" onclick="printnumber(this);" value="0">
+                    <input type="button" class="btn-number" onclick="printOperation();" value="=">
+                </div>
+                <!--DIV PROPIEDADES-->
+                <div>
+                    <input type="button" class="btn-number" onclick="printOperation(this);" value="+">
+                    <input type="button" class="btn-number" onclick="printOperation(this)" value="-"> 
+                    <input type="button" class="btn-number" onclick="printOperation(this)" value="*">
+                    <input type="button" class="btn-number" onclick="printOperation(this)" value="/">
+                </div>
+            </div>
+        </div>    
+
+    </div>
+
+        <script src="https://unpkg.com.sweetalert/dist/sweetalert.min.js"></script>
+        <script src="js calculator/calc.js"></script>
+
+
+
+    
+</body>
+</html>
